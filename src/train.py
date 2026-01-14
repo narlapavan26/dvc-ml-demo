@@ -6,7 +6,7 @@ df = pd.read_csv("data/processed/iris_clean.csv")
 X = df.drop(columns=["target"])
 y = df["target"]
 
-model = LogisticRegression(max_iter=200)
+model = LogisticRegression(max_iter=500)
 model.fit(X, y)
 
 joblib.dump(model, "models/model.pkl")
