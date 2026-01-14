@@ -1,0 +1,10 @@
+# Editor settings
+.vscode/
+
+# DVC data outputs (handled by DVC, not Git)
+data/
+models/
+
+# Python
+__pycache__/
+*.pyc
